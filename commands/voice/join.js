@@ -5,9 +5,9 @@ class JoinCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: "summon",
+            name: "join",
             group: "voice",
-            memberName: "summon",
+            memberName: "join",
             description: "Summons Bot Into Voice Channel"
         });
     }

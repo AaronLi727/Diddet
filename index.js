@@ -17,20 +17,12 @@ client.registry.registerCommandsIn(__dirname + "/commands"); //storing commands 
 
 const queue = new Map();
 
-client.once('ready', () => {
-  console.log('Ready!');
- });
- client.once('reconnecting', () => {
-  console.log('Reconnecting!');
- });
- client.once('disconnect', () => {
-  console.log('Disconnect!');
- });
+
  
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
-
+   
 client.on("message", async message => {
   if(message.author.bot) return;
   if(!message.content.startsWith(prefix)) return;
@@ -96,6 +88,7 @@ async function execute(message, serverQueue) {
 	}
 
 }
+
 
 function skip(message, serverQueue) {
 	if (!message.member.voiceChannel) return message.channel.send('You Must Be In VC To Skip The Music!');

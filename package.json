@@ -1,7 +1,7 @@
 {
-  "name": "Test",
+  "name": "test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Discord Bot That Features Playing Music, Rolling A Dice, Flipping A Coin, Searching Champions/Players On League Of Legends From OP.GG, And More To Come!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +10,24 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^11.6.4",
     "discord.js-commando": "^0.10.0",
+    "ffmpeg": "0.0.4",
     "ffmpeg-binaries": "^4.0.0",
+    "fluent-ffmpeg": "^2.1.2",
     "node-webshot": "^1.0.3",
     "opusscript": "0.0.7",
     "webshot": "^0.18.0",
-    "ytdl-core": "^0.29.5"
-  }
+    "ytdl-core": "^2.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronLi727/Diddet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AaronLi727/Diddet/issues"
+  },
+  "homepage": "https://github.com/AaronLi727/Diddet#readme"
 }
